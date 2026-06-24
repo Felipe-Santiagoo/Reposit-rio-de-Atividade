@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #500101;
+}
+
+.tabuleiro {
+  width: 700px;
+  height: 700px;
+
+  display: grid;
+
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.branco {
+  background: white;
+}
+
+.preto {
+  background: black;
+}

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora {
+    background: #1e2937;
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border: 10px solid #334155;
+}
+
+.marca {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.display {
+    background: #0f172a;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 42px;
+    color: white;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.6);
+    border: 4px solid #475569;
+    overflow: hidden;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 70px;
+    font-size: 26px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:active {
+    transform: scale(0.93);
+}
+
+
+.cinza  { background-color: #64748b; color: white; }
+.laranja { background-color: #f59e0b; color: white; }
+.verde  { background-color: #22c55e; color: white; }
+.preto  { background-color: #334155; color: white; }
+
+.zero {
+    grid-column: span 2;
+}
+
+.igual {
+    grid-column: span 2;
+}
